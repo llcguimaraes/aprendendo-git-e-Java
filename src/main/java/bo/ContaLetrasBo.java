@@ -3,8 +3,8 @@ package bo;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ContaLetras {
-    public static void contaletras(String frase){
+public class ContaLetrasBo {
+    public static Map<Character, Integer> contaletras(String frase){
         frase = frase.toLowerCase().replaceAll(" ", "");
         Map<Character,Integer> map = new HashMap<Character,Integer>();
 
@@ -17,9 +17,6 @@ public class ContaLetras {
             }
         }
 
-        for (Map.Entry<Character, Integer> x : map.entrySet()){
-            System.out.println(x.getKey() + ": " + x.getValue());
-        }
-
+        return map;
     }
 }

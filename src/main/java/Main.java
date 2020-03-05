@@ -1,9 +1,10 @@
+import bo.ContaLetrasBo;
 import bo.FilaBo;
 import bo.ListaBo;
-import bo.ContaLetras;
 import util.ArrayPessoasUtil;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 
 public class Main {
@@ -14,7 +15,8 @@ public class Main {
         //ListaBo.lista(vetor);
 
         String frase = "Hello World!";
-        ContaLetras.contaletras(frase);
+        Map<Character, Integer> map = ContaLetrasBo.contaletras(frase);
+        System.out.println(map);
     }
 }
 
