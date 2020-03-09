@@ -11,8 +11,6 @@ import java.util.Scanner;
 
 
 public class Main {
-    public static int matrizcontrole[][] = new int[12][6];
-
     public static void main(String[] args) {
         /*
         ArrayList<String> vetor = ArrayPessoasUtil.pessoas;
@@ -24,11 +22,6 @@ public class Main {
         Map<Character, Integer> map = ContaLetrasBo.contaletras(frase);
         System.out.println(map);
         */
-        for (int i=0; i<12; i++){
-            for (int j=0; j<6; j++){
-                matrizcontrole[i][j] = 0;
-            }
-        }
 
         while (true){
             int fila;
