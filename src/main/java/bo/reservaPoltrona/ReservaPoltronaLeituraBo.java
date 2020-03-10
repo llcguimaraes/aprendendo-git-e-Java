@@ -21,22 +21,22 @@ public class ReservaPoltronaLeituraBo {
     }
     private static int leFila(){
         int fila = 0;
-        while (ReservaPoltronaValidaReservaBo.validaFila(fila)){
+        while (!ReservaPoltronaValidaReservaBo.validaFila(fila)) {
             System.out.println("Qual fila deseja?");
             Scanner scannerfila = new Scanner(System.in);
             fila = scannerfila.nextInt();
-            if (ReservaPoltronaValidaReservaBo.validaFila(fila))
+            if (!ReservaPoltronaValidaReservaBo.validaFila(fila))
                 System.out.println("Existem apenas 6 filas, escolha novamente.");
         }
         return fila;
     }
     private static int leAssento(){
         int assento = 0;
-        while (ReservaPoltronaValidaReservaBo.validaAssento(assento)){
+        while (!ReservaPoltronaValidaReservaBo.validaAssento(assento)) {
             System.out.println("Qual assento deseja?");
             Scanner scannerassento = new Scanner(System.in);
             assento = scannerassento.nextInt();
-            if (ReservaPoltronaValidaReservaBo.validaAssento(assento))
+            if (!ReservaPoltronaValidaReservaBo.validaAssento(assento))
                 System.out.println("Existem apenas 12 assentos por fila, escolha novamente.");
         }
         return assento;
