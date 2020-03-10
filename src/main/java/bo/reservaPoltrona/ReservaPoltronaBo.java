@@ -1,4 +1,4 @@
-package bo;
+package bo.reservaPoltrona;
 
 public class ReservaPoltronaBo {
     private static boolean[][] matriz = new boolean[6][12];
