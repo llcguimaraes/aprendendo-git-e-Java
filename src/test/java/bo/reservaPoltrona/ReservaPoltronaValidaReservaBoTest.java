@@ -25,4 +25,14 @@ public class ReservaPoltronaValidaReservaBoTest {
     public void validaAssentoValorMenorQueUmDeveRetornarFalso() {
         assertEquals(false, ReservaPoltronaValidaReservaBo.validaAssento(0));
     }
+
+    @Test
+    public void validaAssentoValorMaiorQueDozeDeveRetornarFalso() {
+        assertEquals(false, ReservaPoltronaValidaReservaBo.validaAssento(13));
+    }
+
+    @Test
+    public void validaAssentoValorEntreUmeDozeRetornaVerdadeiro() {
+        assertEquals(true, ReservaPoltronaValidaReservaBo.validaAssento(6));
+    }
 }
