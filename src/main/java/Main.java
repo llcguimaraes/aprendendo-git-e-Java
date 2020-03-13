@@ -13,14 +13,14 @@ public class Main {
 
         ArrayList<String> vetor = ArrayPessoasUtil.pessoas;
 
-        FilaBo.fila(vetor);
-        ListaBo.lista(vetor);
+        System.out.println(FilaBo.fila(vetor));
+        System.out.println(ListaBo.lista(vetor));
 
-        String frase = "Hello World!";
-        Map<Character, Integer> map = ContaLetrasBo.contaletras(frase);
-        System.out.println(map);
+        //String frase = "Hello World!";
+        //Map<Character, Integer> map = ContaLetrasBo.contaletras(frase);
+        //System.out.println(map);
 
-        ReservaPoltronaLeituraBo.executa();
+        //ReservaPoltronaLeituraBo.executa();
     }
 }
 
